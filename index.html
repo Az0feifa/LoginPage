@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Cargar los íconos de FontAwesome para usar en los botones de redes sociales -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<!-- Cargar el archivo CSS para los estilos personalizados -->
+		<link rel="stylesheet" href="style.css" />
+		<title>Página De Inicio De Sesión Moderna</title>
+	</head>
+	<body>
+		<!-- Contenedor principal para todo el contenido de la página -->
+		<div class="container" id="container">
+			<!-- Sección para Crear Cuenta -->
+			<div class="form-container sign up">
+				<!-- Formulario para registro de nueva cuenta -->
+				<form action="#">
+					<h1>Crear Cuenta</h1>
+					<!-- Íconos para registro a través de redes sociales -->
+					<div class="social-iconos">
+						<a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+						<a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+						<a href="#" class="icon"
+							><i class="fa-brands fa-linkedin-in"></i
+						></a>
+					</div>
+					<!-- Texto que indica una opción adicional para registrarse con correo -->
+					<span>O use su correo para registrarse</span>
+					<!-- Campos de entrada para el registro -->
+					<input type="text" placeholder="Nombre" />
+					<input type="email" placeholder="Correo" />
+					<input type="password" placeholder="Contraseña" />
+					<!-- Botón para enviar el formulario de registro -->
+					<button type="submit">Registrarse</button>
+				</form>
+			</div>
+
+			<!-- Sección para Iniciar Sesión -->
+			<div class="form-container sign in">
+				<!-- Formulario para iniciar sesión con una cuenta existente -->
+				<form action="#">
+					<h1>Iniciar Sesión</h1>
+					<!-- Íconos para iniciar sesión con redes sociales -->
+					<div class="social-iconos">
+						<a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+						<a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+						<a href="#" class="icon"
+							><i class="fa-brands fa-linkedin-in"></i
+						></a>
+					</div>
+					<!-- Texto que indica una opción adicional para iniciar sesión con correo -->
+					<span>O use su correo y contraseña</span>
+					<!-- Campos de entrada para el inicio de sesión -->
+					<input type="email" placeholder="Correo" />
+					<input type="password" placeholder="Contraseña" />
+					<!-- Enlace para recuperar contraseña en caso de olvido -->
+					<a href="#">¿Olvidó Contraseña?</a>
+					<!-- Botón para enviar el formulario de inicio de sesión -->
+					<button type="submit">Iniciar Sesión</button>
+				</form>
+			</div>
+
+			<!-- Sección para alternar entre "Iniciar Sesión" y "Crear Cuenta" -->
+			<div class="toggle">
+				<!-- Panel de alternancia para usuarios que ya tienen una cuenta -->
+				<div class="toggle-panel toggle-left">
+					<h1>Bienvenido De Nuevo</h1>
+					<p>
+						Ingresa tus datos personales para usar todas las funciones del sitio
+					</p>
+					<!-- Elemento oculto que podría mostrar el formulario de inicio de sesión -->
+					<div class="hidden" id="login">Iniciar Sesión</div>
+				</div>
+				<!-- Panel de alternancia para usuarios nuevos -->
+				<div class="toggle-panel toggle-right">
+					<h1>Hola, Amigo(a)</h1>
+					<p>
+						Registre tus datos personales para usar todas las funciones del
+						sitio
+					</p>
+					<!-- Elemento oculto que podría mostrar el formulario de registro -->
+					<div class="hidden" id="register">Registrarse</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Archivo JavaScript para manejar la lógica dinámica del sitio -->
+		<script src="script.js"></script>
+	</body>
+</html>
